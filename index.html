@@ -18,24 +18,37 @@
 		</h2>
 	</div>
 
-	<div id="login">
+	<div id="conteiner">
 
-		<h1 style="color: #89b300">Adcione suas transações:</h2>
+		<h1 style="color: #89b300">Adicione suas transações:</h2>
 
 			<form id="formulario">
 		
-		Valor gasto em reais(R$):<br>
-		<input type="number" name="valor" required><br><br>
+				Valor gasto em reais(R$):<br>
+				<input type="number" name="valor" required><br><br>
 
- 		Data da transação:<br>
- 		<input type="date" name="date"><br><br>
- 		<input type="submit" value="Adicionar transação" required><br><br>
- 		<hr>
- 		<p>
- 			<h4>Consulte seu gasto mensal:</h4>
- 		</p>
+ 				Data da transação:<br>
+ 				<input type="month" name="date" required><br><br>
+ 				<input type="submit" value="Adicionar transação"><br><br>
 
-	</form>
+			</form>
+
+	<hr>
+
+	<form>
+ 	
+ 		<h4>Consulte seu gasto mensal:</h4>
+
+ 		<input type="month" name="mes">
+ 		
+ 		<input id="consultar" type="submit" name="consultar" value="Conferir" required>
+
+ 	</form>
+
+ 	<h4>Seu gasto nesse mês foi de:</h4>
+
+ 	<input type="text" name="gastomensal">
+
 	</div>
 
 </body>
